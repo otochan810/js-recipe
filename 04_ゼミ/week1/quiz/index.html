@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+  </head>
+  <body>
+    <div id="display">1km=?m</div>
+    <button id="a">10</button>
+    <button id="b">1000</button>
+    <button id="c">100</button>
+    <script>
+      // ボタン要素を取得する
+      const display = document.getElementById("display")
+      const a = document.getElementById("a")
+      a.onclick = function () {
+        console.log("不正解")
+        display.textContent = "不正解"
+      }
+      const b = document.getElementById("b")
+      b.onclick = function () {
+        console.log("正解")
+        display.textContent = "正解"
+      }
+      const c = document.getElementById("c")
+      c.onclick = function () {
+        console.log("不正解")
+        display.textContent = "不正解"
+      }
+    </script>
+  </body>
+</html>
