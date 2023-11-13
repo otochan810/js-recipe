@@ -14,15 +14,13 @@ addButton.onclick = function () {
   card.append(todo)
   container.append(card)
   inputElement.value = ""
+
+  const deleteButton = document.createElement("div")
+  deleteButton.className = "delete"
+
+  deleteButton.onclick = function () {
+    card.remove()
+  }
+
+  card.append(deleteButton)
 }
-
-const deleteButton = document.createElement("div")
-deleteButton.className = "delete"
-const card = document.getElementById("div")
-card.className = "card"
-
-deleteButton.onclick = function () {
-  card.remove()
-}
-
-card.append(deleteButton)
